@@ -2,6 +2,9 @@
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
+    "resourceGroupName": {
+      "value": "${AZURE_RESOURCE_GROUP}"
+    },
     "environmentName": {
       "value": "${AZURE_ENV_NAME}"
     },
@@ -43,6 +46,15 @@
     },
     "storageResourceGroupName": {
       "value": "${AZURE_STORAGE_RESOURCE_GROUP}"
+    },
+    "appServicePlanName": {
+      "value": "${AZURE_API_APP_SERVICE_PLAN}"
+    },
+    "backendServiceName": {
+      "value": "${AZURE_API_BACKEND_WEB_APP}"
+    },
+    "searchIndexName": {
+      "value": "${AZURE_SEARCH_INDEX}"
     }
   }
 }
